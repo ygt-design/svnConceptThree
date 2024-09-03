@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Calibre-Regular';
+    src: url('./fonts/CalibreMedium.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Calibre-SemiBold';
+    src: url('./fonts/CalibreSemibold.otf') format('opentype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Calibre-Regular', sans-serif;
+}
+
+li{
+    list-style: none;
+    color: black;
+    cursor: pointer;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 25px;
+    /* position: fixed; */
+    /* top: 0; */
+    /* width: 100%; */
+    background-color: white;
+}
+
+.nav--right-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #B3B3B3;
+    font-size: 32px;
+    width: 90%;
+}
+
+/* .nav--right-list li{
+} */
+
+.nav--left-text{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.nav--left-text span{
+    font-weight: normal;
+    color: #B3B3B3;
+}
+
+.display-text{
+    font-size: 32px;
+}
+
+.menuContent{
+    color: #B3B3B3;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 32px;
+    flex-direction: column;
+    height: 200px;
+}
+
+.menuContentItem{
+    width: fit-content;
+    cursor: pointer;
+}
+
+.menuContent .menuContentItem:hover{
+    color: black;
+}
+
+/* ================================================================================================================ */
+
+.big-display{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px;
+    margin-top: 50px;
+}
+
+.big-display img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modular-grid{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 25px;
+}
+
+
+.modular-grid-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.grid-item-block{
+    width: 100%;
+}
+
+.modular-grid-item .grid-item-block img{
+    width: 100%;
+}
+
+.modular-grid .grid-text h3{
+    font-family: 'Calibre-SemiBold', sans-serif;  
+    font-size: 25px;
+}
+
+.modular-grid .grid-text h4{
+    color: #B3B3B3;
+    font-size: 15px;
+}
+
+.grid-one{
+    border-top: 100px solid white;
+}
+
+.modular-grid .grid-four{
+    border-bottom: 100px solid white;
+}
